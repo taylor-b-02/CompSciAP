@@ -9,7 +9,7 @@ public class VotingMachine {
 		R += 1;
 	}
 	
-	public String count() {
+	public String decide() {
 		if (D > R) {
 			return "Democrats Win";
 		}
@@ -25,6 +25,10 @@ public class VotingMachine {
 	public void clear() {
 		D = 0;
 		R = 0;
+	}
+	
+	public String count() {
+		
 	}
 	
 	int D = 0;
