@@ -1,3 +1,7 @@
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
+
 /**
    A bank account has a balance that can be changed by 
    deposits and withdrawals.
@@ -16,6 +20,7 @@ public class BankAccount
    public BankAccount()
    {   
       balance = 0;
+      Calendar cal = new GregorianCalendar( TimeZone.getTimeZone("America/New_York") );
    }
 
    /**
