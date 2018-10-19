@@ -28,7 +28,7 @@ public class VotingMachine {
 	}
 	
 	public String count() {
-		
+		return "Democrats: " + D + " Republicans: " + R;
 	}
 	
 	int D = 0;

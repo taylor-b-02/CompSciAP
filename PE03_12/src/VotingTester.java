@@ -13,8 +13,8 @@ public class VotingTester {
 		
 		Calendar testCal = new GregorianCalendar( 2018, 11, 6);
 		Calendar cal = new GregorianCalendar( TimeZone.getTimeZone("America/New_York") );
-		
-		//cal = testCal;
+
+		cal = testCal;
 		//System.out.println(testCal);
 		//System.out.println(cal);
 		
