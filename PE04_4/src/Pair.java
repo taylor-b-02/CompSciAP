@@ -38,22 +38,20 @@ public class Pair {
 
 	public double getDistance() {
 	
-		return (first + second);
+		return (Math.abs( first - second ) );
 	
 	}
 
 	public double getMax() {
 	
-		return (first + second);
+		return Math.max( first, second );
 	
 	}
 
 	public double getMin() {
 	
-		return (first + second);
+		return Math.min( first, second );
 	
 	}
-
-
 
 }
