@@ -5,10 +5,10 @@ public class Pair {
 	double first;
 	double second;
 	
-	public Pair( double aFirst, double aSecond) {
+	public Pair( double aFirst, double aSecond ) {
 		
-		double first = aFirst;
-		double second = aSecond;
+		first = aFirst;
+		second = aSecond;
 	
 	}
 	
