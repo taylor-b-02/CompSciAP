@@ -20,7 +20,7 @@ public class Pair {
 	
 	public double getDifference() {
 		
-		return (first / second);
+		return (first - second);
 		
 	}
 
