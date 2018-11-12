@@ -1,37 +1,31 @@
-
 public class Balloon {
-
-	public Balloon() {
-		air = 0;
-		volume = 0;
-		surfaceArea = 0;
-		radius = 0;
+	
+	private double air;
+	private double rad;
+	
+	public Balloon(double initAir) {
+		air = initAir;
+		rad();
 	}
 	
 	public void addAir(double amount) {
-		
-		c
-		
+		air += amount;
+		rad();
 	}
 	
 	public double getVolume() {
-		
-		
-	}
-	
-	public double getRadius() {
-		
-		
+		return air; 
 	}
 	
 	public double getSurfaceArea() {
-		
-		
+		return 4 * Math.PI * rad * rad;
 	}
 	
-	double air = 0;
-	double volume = 0;
-	double surfaceArea = 0;
-	double radius = 0;
-
+	public double getRadius() {
+		return rad;
+	}
+	
+	private void rad() {
+		rad = Math.cbrt(air * (3.0/4) / Math.PI);
+	}
 }
