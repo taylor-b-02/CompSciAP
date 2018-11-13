@@ -27,8 +27,8 @@ public class EasterSunday{
 	int n  = (h - m + r + 90 ) / 25;
 	
 	int p  = ( h - m + r + n + 19 ) % 32;
-	System.out.println( n );
-System.out.println( p );
+	System.out.print( n );
+System.out.print( "/" + p );
 	
 	}
 }
