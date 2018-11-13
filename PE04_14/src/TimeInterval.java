@@ -14,7 +14,7 @@ public class TimeInterval {
 		t1 = time1;
 		
 		if (time1 > 2400 || time2 > 2400 || time1 % 100 > 60 || time2 % 100 > 60) {
-			System.out.println("Incorrect time formatting. Resetting values.");
+			System.out.println("Error");
 			t1 = 0;
 			t2 = 0;
 		}
