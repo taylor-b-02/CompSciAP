@@ -1,4 +1,4 @@
-
+import java.lang.Math;
 public class QuadraticEq {
 
 	public QuadraticEq( double ia, double ib, double ic ) {
@@ -24,13 +24,23 @@ public class QuadraticEq {
 	
 	public double getSolution1( ) {
 		
-		d
+		if ( this.hasSolutions() )
+		{
+			double sol1 = ( -b + Math.sqrt( discriminant ) ) / (2 * a);
+			return sol1;
+		}
+		else return 0;
 		
 	}
 	
 	public double getSolution2( ) {
 		
-		d
+		if ( this.hasSolutions() )
+		{
+			double sol2 = ( -b - Math.sqrt( discriminant ) ) / (2 * a);
+			return sol2;
+		}
+		else return 0;
 		
 	}
 	
