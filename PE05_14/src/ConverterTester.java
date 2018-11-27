@@ -14,7 +14,7 @@ public class ConverterTester {
 		
 		System.out.println("Value:");
 		double value = in.nextDouble();
-		System.out.println(test.convert());
+		System.out.println(test.convert(from, to, value));
 
 	}
 
