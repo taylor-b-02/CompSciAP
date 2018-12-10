@@ -18,12 +18,7 @@ public class CurrencyConverter {
 				System.out.println("Terminated");
 				test = false;
 			}
-			else {
-				if (in.hasNextDouble()) {
-					System.out.println(in.nextDouble() * 0.88);
-				}
-				else System.out.println("Invalid Input");
-			}
+			else System.out.println(Double.parseDouble(input) * 0.88);
 		}
 		
 	}

@@ -1,20 +1,26 @@
 
 class Cannonball {
+	
 	double velocity, position;
+	
 	Cannonball(double velocity) {
 		this.velocity = velocity;
 	}
-	void move() { 
+	
+	private void move() { 
 		this.position += this.velocity * 0.01;
 		this.velocity = this.velocity - 9.81 * 0.01;
 	}
-	double getX() {
+	
+	private double getX() {
 		return this.position;
 	}
-	double getY() {
+	
+	private double getY() {
 		return this.velocity;
 	}
-	void shoot(double initVelocity) {
+	
+	public void launch(double initVelocity) {
 		for (int i = 0; this.position >= 0; i++) {
 			if (i % 100 == 0) {
 				System.out.print( "(" + this.getX() + ", " + this.getY() + ")");
