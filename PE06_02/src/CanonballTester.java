@@ -1,13 +1,8 @@
-import java.util.Scanner;
-
 public class CanonballTester {
-	
-	public static void main(String [] args) {
+	public static void main(String []args) {
 		
-		Scanner in = new Scanner(System.in);
-		Cannonball test = new Cannonball();
-		test.calculate(in.nextDouble());
+		Cannonball c = new Cannonball(100);
+		c.shoot(100);
 		
 	}
-
 }
