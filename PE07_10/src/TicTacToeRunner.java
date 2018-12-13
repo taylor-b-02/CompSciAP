@@ -31,5 +31,6 @@ public class TicTacToeRunner
                player = "x";    
          }
       }
+      System.out.println(game.getWinner());
    }
 }

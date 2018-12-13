@@ -43,7 +43,9 @@ public class TicTacToe
 	   
 	   for (int i = 0; i < ROWS; i++) {
 		   for (int j = 0; j < COLUMNS; j++) {
-			   if ((board[i][j].equals("x")) && board[i][j+1] && board[i][j+2]) w = "x";
+			   if ( (board[i][j] == "x") && (board[i][j+1] == "x") && (board[i][j+2] == "x") ) {
+				   w = "x";
+			   }
 		   }
 	   }
 	   return w;
