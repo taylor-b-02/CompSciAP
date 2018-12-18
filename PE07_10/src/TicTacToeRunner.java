@@ -30,7 +30,8 @@ public class TicTacToeRunner
             else 
                player = "x";    
          }
+         System.out.println("Winner: " + game.getWinner() + "\n");
       }
-      System.out.println(game.getWinner());
+      //System.out.println("Winner: " + game.getWinner());
    }
 }
