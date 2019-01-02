@@ -19,6 +19,7 @@ public class Purse {
 	}
 
 	public void transfer(Purse other) {
-		
+		other.purse.addAll(this.purse);
+		this.purse.clear();
 	}
 }
