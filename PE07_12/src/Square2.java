@@ -24,6 +24,6 @@ public class Square2 {
 			}
 			return true;
 		}
-		return false;
+		return true;
 	}
 }

@@ -9,8 +9,7 @@ public class SquareTester2 {
 		boolean done = false;
 		
 		while (!done) {
-			System.out.println("Type Next Input. Type a negative "
-					+ "number or zero to check if it's magic");
+			System.out.println("Type Next Input. Type a negative zero to check if it's magic");
 			int newNum = in.nextInt();
 			
 			if (newNum < 1) {
