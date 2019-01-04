@@ -9,15 +9,15 @@ public class SquareTester2 {
 		boolean done = false;
 		
 		while (!done) {
-			System.out.println("Type your next ineger to be added. Type a negative "
-					+ "number or zero to check if it is a magic square.");
+			System.out.println("Type Next Input. Type a negative "
+					+ "number or zero to check if it's magic");
 			int newNum = in.nextInt();
 			
 			if (newNum < 1) {
 				if (sq.isMagic())
-					System.out.println("This is a Magic Square.");
+					System.out.println("Magic");
 				else
-					System.out.println("This is not a Magic Square.");
+					System.out.println("Not Magic");
 			}
 			else
 				sq.add(newNum);

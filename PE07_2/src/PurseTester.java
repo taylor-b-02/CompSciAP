@@ -5,13 +5,13 @@ public class PurseTester {
 		
 		Purse p = new Purse();
 		p.addCoin("Quarter");
-		p.addCoin("Quarter");
-		p.addCoin("Quarter");
-		p.addCoin("Quarter");
-		p.addCoin("Penny");
+		p.addCoin("Dime");
 		
 		Purse p2 = new Purse();
+		p2.addCoin("Quarter");
 		p2.addCoin("Dime");
+		
+		System.out.println(p.sameContents(p2));
 		
 		System.out.println(p.toString());
 		System.out.println(p2.toString() + '\n');
@@ -21,8 +21,6 @@ public class PurseTester {
 		
 		p.transfer(p2);
 		System.out.println(p.toString() + '\n' + p2.toString());
-		
-		System.out.println("\n" + p.sameContents(p2));
 
 	}
 
