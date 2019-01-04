@@ -22,4 +22,14 @@ public class Purse {
 		other.purse.addAll(this.purse);
 		this.purse.clear();
 	}
+	
+	public boolean sameContents(Purse other) {
+		for (int i = 0; i < this.purse.size(); i++) {
+			if (this.purse.get(i) != other.purse.get(i)) {
+				return false;
+			}
+			//else return true;
+		}
+		return true;
+	}
 }

@@ -21,6 +21,8 @@ public class PurseTester {
 		
 		p.transfer(p2);
 		System.out.println(p.toString() + '\n' + p2.toString());
+		
+		System.out.println("\n" + p.sameContents(p2));
 
 	}
 
