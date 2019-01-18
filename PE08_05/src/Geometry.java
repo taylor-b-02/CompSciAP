@@ -1,4 +1,5 @@
- import java.lang.Math;
+ import java.awt.geom.Ellipse2D;
+import java.lang.Math;
 public class Geometry {
 	
 	public static double sphereVolume(double r) {
@@ -23,6 +24,22 @@ public class Geometry {
 	
 	public static double coneSurface(double r, double h) {
 		return Math.PI * r * (r + Math.sqrt( (h * h) + (r * r) ));
+	}
+	
+	public static double perimeter(Ellipse2D.Double e) {
+		double a = e.getWidth();
+		double b = e.getHeight();
+		double h = Math.pow( (a - b), 2) / Math.pow( (a + b), 2);
+		
+		return ( Math.PI * (a + b) ) * ( (1 + ( (3 * h) / (10 + Math.sqrt(4 - ( 3 * h) ) ) ) ) );
+	}
+	
+	public static double area(Ellipse2D.Double e) {
+		double a = e.getHeight();
+		double b = e.getWidth();
+		
+		return Math.PI * a * b;
+		
 	}
 
 }
