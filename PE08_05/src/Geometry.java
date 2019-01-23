@@ -1,4 +1,5 @@
  import java.awt.geom.Ellipse2D;
+import java.awt.geom.Point2D;
 import java.lang.Math;
 public class Geometry {
 	
@@ -41,5 +42,32 @@ public class Geometry {
 		return Math.PI * a * b;
 		
 	}
+	
+	public static double angle(Point2D.Double p, Point2D.Double q) {
+		
+    	return Math.atan(p.getX() - q.getX() / (p.getY() - q.getY() ) );
+    
+	}
+    
+    public static double slope(Point2D.Double p, Point2D.Double q) {
+    	
+    	return p.getX() - q.getX()/(p.getY() - q.getY());
+    }
+    
+    public static boolean isInside(Point2D.Double p, Ellipse2D.Double e) {
+    	
+    	if (Math.pow( (p.getX() - e.getCenterX() ), 2) / (Math.pow( (e.getWidth() * .5),2) ) + (Math.pow( (p.getY() - e.getCenterY() ), 2) / (Math.pow( (e.getHeight() * .5),2) ) ) <= 1)
+    		return true;
+    	
+    	return false;
+    }
+    
+    public static boolean isOnboundary(Point2D.Double p, Ellipse2D.Double e) {
+    	
+    	if (Math.pow( (p.getX() - e.getCenterX() ), 2) / (Math.pow( (e.getWidth() * 0.5),2) ) + (Math.pow( (p.getY() - e.getCenterY() ), 2) / (Math.pow( (e.getHeight() * .5),2) ) ) == 1)
+    		return true;
+    	
+    	return false;
+}
 
 }
