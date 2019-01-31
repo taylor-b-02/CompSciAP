@@ -13,8 +13,10 @@ public class QuizAverager {
 	         System.out.print(n + " ");
 	      }
 		
+		Quiz highest = (Quiz) ds.getMaximum();
 		System.out.println();
-	    System.out.println("Average: " + ds.getAverage());
+	    System.out.println("\nAverage Grade: " + ds.getAverage());
+	    System.out.println("Highest Grade: " + highest.getMeasure() + " " + highest.getLetter());
 
 	}
 

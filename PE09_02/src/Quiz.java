@@ -16,5 +16,9 @@ public class Quiz implements Measurable {
 	public double getMeasure() {
 		return score;
 	}
+	
+	public String getLetter() {
+		return letter;
+	}
 
 }
