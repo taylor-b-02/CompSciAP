@@ -7,7 +7,7 @@ public class QuizAverager {
 		
 		for (int i = 1; i <= COUNT; i++)
 	      {  
-	         Quiz d = new Quiz(Math.random() * 100);
+	         //Quiz d = new Quiz(Math.random() * 100);
 	         double n = d.getMeasure();
 	         ds.add(d);
 	         System.out.print(n + " ");
