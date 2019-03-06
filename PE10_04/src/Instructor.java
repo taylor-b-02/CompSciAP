@@ -9,5 +9,6 @@ public class Instructor extends Person{
 	public String toString() {
 		return "Instructor[Name: " + name + "Birth Year: " + birthyear + "Salary: " + salary +"]";
 	}
-int salary;
+	
+	protected int salary;
 }

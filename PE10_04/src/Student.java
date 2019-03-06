@@ -10,6 +10,6 @@ public class Student extends Person{
 		return "Student[Name: " + name + "Birth Year: " + "Major: " + major + "]";
 	}
 	
-	String major;
+	protected String major;
 
 }

@@ -1,8 +1,8 @@
 
 public class Person {
 	
-	String name;
-	int birthyear;
+	protected String name;
+	protected int birthyear;
 	
 	public Person(String aname, int abirthyear) {
 		name = aname;
