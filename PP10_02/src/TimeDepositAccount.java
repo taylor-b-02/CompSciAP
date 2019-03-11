@@ -17,6 +17,10 @@ public class TimeDepositAccount extends BankAccount{
 		}
 		else if (months > 0) super.withdraw(amount + WITHDRAWAL_FEE);
 	}
+	
+	public String toString() {
+		return
+	}
 	public final int WITHDRAWAL_FEE = 1;
 	int months;
 	double interest;

@@ -6,7 +6,7 @@ public class Square extends Rectangle{
 		super.setSize(awidth, awidth);
 	}
 
-	public int getArea(Square s) {
-		return (int) ( s.getHeight() * s.getHeight() );
+	public int getArea() {
+		return (int) ( getHeight() * getHeight() );
 	}
 }

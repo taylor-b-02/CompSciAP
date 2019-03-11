@@ -7,7 +7,7 @@ public class Employee {
 	}
 	
 	public String toString() {
-		return "Employee[Name: " + name + "Salary: " + salary;
+		return "Employee[Name: " + name + " Salary: " + salary + "]";
 	}
 	
 	String name;

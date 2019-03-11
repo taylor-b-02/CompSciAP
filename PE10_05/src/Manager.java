@@ -7,7 +7,7 @@ public class Manager extends Employee{
 	}
 	
 	public String toString() {
-		return "Manger[Name: " + name + "Salary: " + salary + "Department: " + department + "]";
+		return "Manger[Name: " + name + " Salary: " + salary + " Department: " + department + "]";
 	}
 	
 	protected String department;

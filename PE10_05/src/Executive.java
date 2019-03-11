@@ -6,7 +6,7 @@ public class Executive extends Manager{
 	}
 	
 	public String toString() {
-		return "Executive[Name: " + name + "Salary: " + salary + "Department: " + department + "]";
+		return "Executive[Name: " + name + " Salary: " + salary + " Department: " + department + "]";
 	}
 
 }
