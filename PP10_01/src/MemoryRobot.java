@@ -1,4 +1,4 @@
 
-public class MemoryRobot {
+public class MemoryRobot extends Robot{
 
 }

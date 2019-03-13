@@ -1,4 +1,5 @@
 
-public class RightHandRuleRobot {
+public class RightHandRuleRobot extends Robot{
+	
 
 }

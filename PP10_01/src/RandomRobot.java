@@ -1,4 +1,4 @@
 
-public class RandomRobot {
+public class RandomRobot extends Robot{
 
 }
