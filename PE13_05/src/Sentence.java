@@ -34,16 +34,16 @@ public class Sentence {
 	
 	public int indexOf(String t) {
 		String test = t;
+		int count = 0;
 		int testLen = test.length();
 		String testSentence = sentence.substring(0, testLen);
 		if (testSentence.equals(test)) return count;
 		count ++;
 		Sentence nextSentence = new Sentence(sentence.substring(1));
-		return nextSentence.count;
+		return count + nextSentence.indexOf(test);
 	}
 	
 	String sentence;
 	String reverse = "";
-	int count = 0;
 
 }
